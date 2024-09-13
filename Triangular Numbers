@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+void printTriangularNumbers(int n) {
+    cout << "Triangular Numbers:" << endl;
+    for (int i = 1; i <= n; ++i) {
+        int triangularNumber = (i * (i + 1)) / 2;
+        cout << triangularNumber << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    int n;
+    cout << "Enter the number of triangular numbers you want to print: ";
+    cin >> n;
+    
+    printTriangularNumbers(n);
+
+    return 0;
+}
